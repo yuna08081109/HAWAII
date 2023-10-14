@@ -76,7 +76,7 @@ end
         @ranked_posts = Aloha
         .left_joins(:comments)
         .select("alohas.*, COALESCE(AVG(CAST(comments.star AS DECIMAL)), 0) as average_star")
-        .group("alohas.id")
+        .group("aloha.id")
         .where(category: "グルメ")
         .order("average_star DESC")
         .limit(5)
@@ -87,7 +87,7 @@ end
         @ranked_posts = Aloha
         .left_joins(:comments)
         .select("alohas.*, COALESCE(AVG(CAST(comments.star AS DECIMAL)), 0) as average_star")
-        .group("alohas.id")
+        .group("aloha.id")
         .where(category: "スポット")
         .order("average_star DESC")
         .limit(5)
@@ -99,7 +99,7 @@ end
         @ranked_posts = Aloha
         .left_joins(:comments)
         .select("alohas.*, COALESCE(AVG(CAST(comments.star AS DECIMAL)), 0) as average_star")
-        .group("alohas.id")
+        .group("aloha.id")
         .where(category: "レジャー")
         .order("average_star DESC")
         .limit(5)
@@ -110,7 +110,7 @@ end
         @ranked_posts = Aloha
         .left_joins(:comments)
         .select("alohas.*, COALESCE(AVG(CAST(comments.star AS DECIMAL)), 0) as average_star")
-        .group("alohas.id")
+        .group("aloha.id")
         .where(category: "お土産")
         .order("average_star DESC")
         .limit(5)
