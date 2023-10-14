@@ -37,7 +37,7 @@ class AlohasController < ApplicationController
         @aloha = Aloha.find(params[:id])
         @comments = @aloha.comments
         @comment = Comment.new
-        @rank = @aloha.comments.average(:star)
+        @rank = @aloha.comments.average(:star.to_i)
       end
 
       def edit
@@ -91,6 +91,7 @@ end
         .where(category: "スポット")
         .order("average_star DESC")
         .limit(5)
+      
 end
 
       def leisure
