@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8">
+   <title>グルメランキング</title>
+   <link rel="stylesheet" type="text/css" href="forget.css">
+   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+ </head>
+
+<div class="forget">
+ <div class="forget-title">
+  Forgot your password?
+ </div>
+</div>
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "users/shared/error_messages", resource: resource %>
+<div class="ログイン2">
+  <div class="フィールド">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field2">
+    <%= f.submit "Send me reset password instructions" %>
+  </div>
+<% end %>
+
+  <div class="link">
+<%= render "users/shared/links" %>
+  </div>

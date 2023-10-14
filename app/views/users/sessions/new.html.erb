@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8">
+   <title>グルメランキング</title>
+   <link rel="stylesheet" type="text/css" href="newnew.css">
+   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+ </head>
+
+<div class="ログイン">
+ <div class="ログインタイトル">
+  LOG IN
+ </div>
+</div>
+
+<div class="ログイン2">
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="フィールド">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="フィールド">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field2">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="アクションズ">
+    <%= f.submit "Log in" %>
+  </div>
+<% end %>
+
+
+<%= render "users/shared/links" %>
+</div>
