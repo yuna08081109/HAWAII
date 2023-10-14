@@ -37,7 +37,7 @@ class AlohasController < ApplicationController
         @aloha = Aloha.find(params[:id])
         @comments = @aloha.comments
         @comment = Comment.new
-        @rank = @aloha.comments.average(:star.to_i)
+        @rank = @aloha.comments.average(:star)
       end
 
       def edit
