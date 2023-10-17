@@ -73,47 +73,23 @@ end
 
       def food
         @alohas = Aloha.all
-        @ranked_posts = Aloha
-        .left_joins(:comments)
-        .select("alohas.*, COALESCE(AVG(CAST(comments.star AS DECIMAL)), 0) as average_star")
-        .group("alohas.id")
-        .where(category: "グルメ")
-        .order("average_star DESC")
-        .limit(5)
+        
       end
 
       def spot
         @alohas = Aloha.all
-        @ranked_posts = Aloha
-        .left_joins(:comments)
-        .select("alohas.*, COALESCE(AVG(CAST(comments.star AS DECIMAL)), 0) as average_star")
-        .group("alohas.id")
-        .where(category: "スポット")
-        .order("average_star DESC")
-        .limit(5)
+       
       
 end
 
       def leisure
         @alohas = Aloha.all
-        @ranked_posts = Aloha
-        .left_joins(:comments)
-        .select("alohas.*, COALESCE(AVG(CAST(comments.star AS DECIMAL)), 0) as average_star")
-        .group("alohas.id")
-        .where(category: "レジャー")
-        .order("average_star DESC")
-        .limit(5)
+ 
 end
 
       def omiyage
         @alohas = Aloha.all
-        @ranked_posts = Aloha
-        .left_joins(:comments)
-        .select("alohas.*, COALESCE(AVG(CAST(comments.star AS DECIMAL)), 0) as average_star")
-        .group("alohas.id")
-        .where(category: "お土産")
-        .order("average_star DESC")
-        .limit(5)
+      
 end
 
       private
