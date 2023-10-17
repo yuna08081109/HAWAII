@@ -14,3 +14,13 @@
 </div>
 
 
+<% @alohas.each do |t| %>
+  <% if t.category == "お土産" %>
+      <%= image_tag t.photo_url, size: "250x200" if t.photo? %>
+      <%= t.name %>
+      <%= t.about %>
+      <%= link_to "詳細へ", aloha_path(t.id) %>
+      <%= link_to "編集する", edit_aloha_path(t.id) %>
+      <%= button_to "削除する", aloha_path(t.id), method: :delete %>
+  <% end %>
+<% end %>
