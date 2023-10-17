@@ -103,28 +103,7 @@
 
 
 
-<div class="comment-create">
-  <div class="comment-create-box">
-   <div class="post">
-    comment post
-   </div>
-   <div class="love">
-    <h5 class="コメント入力">コメント入力</h5>
-    <div class="テキストエリア">
-     <%= form_with(model: [@aloha, @comment], local: true) do |f| %>
-     <%= f.text_area :content %>
-    </div>
 
-    
-    <div class="コメントする">
-      <%= button_tag type: "submit" do %>
-        <i class="far fa-comments"></i> コメントする
-      <% end %>
-    <% end %>
-    </div>
-   </div>
-  </div>
-</div>
 
 
 </div>
