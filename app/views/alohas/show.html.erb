@@ -127,25 +127,7 @@ function initMap(){
    </div>
  </div>
 
-<div class="comment-wrapper">
-<h3>comment</h3>
-<div class="comment-box">
-  <% @comments.each do |c| %>
-    <%= hosi=c.star %>
-    <div class="コメント">
-      <div class="main-box">
-        <div class="left-container"><%= c.content %></div>
-        <div class="right-container">
-         <span class="star-rating">
-          <span class="star-rating-front" style="width: <%= getPercent(hosi.to_i) %>%;">★★★★★</span>
-          <span class="star-rating-back">★★★★★</span>
-         </span> 
-        </div>
-      </div>
-      <% end %>
-    </div>
-</div>
-</div>
+
 </div>
 
 
