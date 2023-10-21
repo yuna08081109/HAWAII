@@ -4,6 +4,7 @@ class CommentsController < ApplicationController
     def create
       aloha = Aloha.find(params[:aloha_id])
       comment = aloha.comments.build(comment_params)
+      comment.star = comment.star.to_i
       if comment.save
         flash[:success] = "コメントしました"
         redirect_back(fallback_location: root_path) 
