@@ -64,8 +64,8 @@ li {
     width: 100%;
 }
 
-.ポイント{
-    font-size: 40px;
+.内容 .ポイント{
+    font-size: 30px;
     text-align: center;
     justify-content: center;
 }
