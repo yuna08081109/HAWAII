@@ -18,7 +18,7 @@
 
   <div class="photo">
     <% @aloha.images.each do |image| %>
-      <%= image_tag image.image_url, size: "350x300" %>
+      <%= image_tag image.image_url, size: "300x250" %>
     <% end %>
   </div>
  </div>
@@ -32,59 +32,59 @@
    </div>
    <div class="文">
     <ul>
-    <li>おすすめ度
-      <div class="おすすめ度">
-        <%= @rank %>
+      
+    <div class="おすすめ度箱">
+       <div class="titletitle">おすすめ度</div>
+       <div class="おすすめ度"><li><%= @rank %></li></div>
+    </div>
+    
+    <div class="営業時間箱">
+       <div class="titletitle">営業時間</div>
+       <div class="営業時間"><%= @aloha.time %></div>
+    </div>
+    
+    <div class="おすすめポイント箱">
+      <div class="titletitle">おすすポイント</div>
+        <div class="おすすめポイント"><%= @aloha.about %>
       </div>
-    </li>
+      </div>
+    
+      <div class="予算箱">
+      <div class="titletitle">予算</div>
+        <div class="予算"><%= @aloha.price %>
+      </div>
+      </div>
 
-    <li>営業時間
-      <div class="営業時間">
-        <%= @aloha.time %>
+   
+      <div class="ホームページ箱">
+      <div class="titletitle">公式ホームページ</div>
+        <div class="ホームページ"><%= @aloha.link %>
       </div>
-    </li>
+      </div>
 
-    <li>おすすめポイント
-      <div class="おすすめポイント">
-        <%= @aloha.about %>
+      <div class="駐車場箱">
+      <div class="titletitle">駐車場</div>
+        <div class="駐車場"><%= @aloha.parking %>
       </div>
-    </li>
+      </div>
 
-    <li>予算
-      <div class="予算">
-        <%= @aloha.price %>
+      <div class="注意点箱">
+      <div class="titletitle">注意点</div>
+        <div class="注意点"><%= @aloha.point %>
       </div>
-    </li>
+      </div>
 
-    <li>公式ホームページ
-      <div class="ホームページ">
-        <%= @aloha.link %>
+      <div class="住所箱">
+      <div class="titletitle">住所</div>
+        <div class="住所"><%= @aloha.address %>
       </div>
-    </li>
+      </div>
 
-    <li>駐車場
-      <div class="駐車場">
-        <%= @aloha.parking %>
+      <div class="電話番号箱">
+      <div class="titletitle">電話番号</div>
+        <div class="電話番号"><%= @aloha.phonenumber %>
       </div>
-    </li>
-
-    <li>注意点
-      <div class="注意点">
-        <%= @aloha.point %>
       </div>
-    </li>
-
-    <li>住所
-      <div class="住所">
-        <%= @aloha.address %>
-      </div>
-    </li>
-
-    <li>電話番号
-      <div class="電話番号">
-        <%= @aloha.phonenumber %>
-      </div>
-    </li>
 
     </ul>
    </div>

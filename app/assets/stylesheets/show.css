@@ -39,7 +39,7 @@
 
 .first-block-show .photo{
     margin-top: 100px;
-    margin-left: 43px;
+    margin-left: 110px;
 }
 
 
@@ -65,49 +65,120 @@
 
 .second-block-show .内容 .文{
     font-size: 20px;
-    margin-left: 80px;
+    margin-left: 70px;
+    margin-right: 70px;
     padding-top: 40px;
 }
 
-.second-block-show .内容 li{
-    margin-bottom: 30px;
+.おすすめ度箱{
     display: flex;
+    margin-top: 15px;
     font-weight: bold;
+    border-bottom: solid;
+    border-color: #E9E9E9;
 }
 
-.second-block-show .内容 .おすすめ度{
+.営業時間箱{
+    display: flex;
+    margin-top: 15px;
+    font-weight: bold;
+    border-bottom: solid;
+    border-color: #E9E9E9;
+}
+
+.おすすめポイント箱{
+    display: flex;
+    margin-top: 15px;
+    font-weight: bold;
+    border-bottom: solid;
+    border-color: #E9E9E9;
+}
+
+.予算箱{
+    display: flex;
+    margin-top: 15px;
+    font-weight: bold;
+    border-bottom: solid;
+    border-color: #E9E9E9;
+}
+
+.ホームページ箱{
+    display: flex;
+    margin-top: 15px;
+    font-weight: bold;
+    border-bottom: solid;
+    border-color: #E9E9E9;
+}
+
+.駐車場箱{
+    display: flex;
+    margin-top: 15px;
+    font-weight: bold;
+    border-bottom: solid;
+    border-color: #E9E9E9;
+}
+
+.注意点箱{
+    display: flex;
+    margin-top: 15px;
+    font-weight: bold;
+    border-bottom: solid;
+    border-color: #E9E9E9;
+}
+
+.住所箱{
+    display: flex;
+    margin-top: 15px;
+    font-weight: bold;
+    border-bottom: solid;
+    border-color: #E9E9E9;
+}
+
+.電話番号箱{
+    display: flex;
+    margin-top: 15px;
+    font-weight: bold;
+    border-bottom: solid;
+    border-color: #E9E9E9;
+}
+
+.titletitle {
+    white-space: nowrap;
+}
+
+.おすすめ度{
     padding-left: 5em;
 }
 
-.second-block-show .内容 .営業時間{
+.営業時間{
     padding-left: 6em;
 }
 
-.second-block-show .内容 .おすすめポイント{
-    padding-left: 2em;
+.おすすめポイント{
+    padding-left: 3em;
 }
 
-.second-block-show .内容 .予算{
+.予算{
     padding-left: 8em;
 }
 
-.second-block-show .内容 .ホームページ{
+.ホームページ{
     padding-left: 2em;
 }
 
-.second-block-show .内容 .駐車場{
+.駐車場{
     padding-left: 7em;
 }
 
-.second-block-show .内容 .注意点{
+.注意点{
     padding-left: 7em;
 }
 
-.second-block-show .内容 .住所{
+.住所{
     padding-left: 8em;
 }
 
-.second-block-show .内容 .電話番号{
+.電話番号{
     padding-left: 6em;
 }
 
@@ -119,11 +190,13 @@
 .所在地{
     font-size: 20px;
     font-weight: bold;
-    margin-left: 80px;
+    margin-left: 70px;
+    padding-top: 15px;
 }
 
 #map{
-    margin-left: 9em;
+    margin-left: 12em;
+    margin-top: 15px;
 }
 
 .comment-wrapper{
